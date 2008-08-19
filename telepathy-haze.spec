@@ -9,7 +9,7 @@ URL:            http://telepathy.freedesktop.org/wiki/
 Source0:        http://telepathy.freedesktop.org/releases/%{name}/%{name}-%{version}.tar.gz
 BuildRoot:      %{_tmppath}/%{name}-%{version}-%{release}-root
 
-BuildRequires:  telepathy-glib
+BuildRequires:  libtelepathy-glib-devel
 BuildRequires:  pkgconfig(purple)
 Requires:       telepathy-filesystem
 
@@ -20,7 +20,7 @@ telepathy enabled software, such as empathy.
 
 %files
 %defattr(-,root,root,-)
-%doc COPYING AUTHORS
+%doc AUTHORS NEWS
 %{_datadir}/dbus-1/services/*.service
 %{_datadir}/telepathy/managers/*.manager
 %{_libdir}/%{name}
@@ -39,8 +39,7 @@ telepathy enabled software, such as empathy.
 
 %install
 rm -rf %buildroot
-make install DESTDIR=%buildroot
-
+%makeinstall_std
 
 %clean
 rm -rf %buildroot
