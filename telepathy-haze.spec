@@ -1,6 +1,6 @@
 Name:           telepathy-haze
 Version:        0.3.2
-Release:        %mkrel 1
+Release:        %mkrel 2
 Summary:        A multiprotocol connection manager based on pidgin
 
 Group:          Networking/Instant messaging
@@ -12,6 +12,7 @@ BuildRoot:      %{_tmppath}/%{name}-%{version}-%{release}-root
 BuildRequires:  libtelepathy-glib-devel
 BuildRequires:  pkgconfig(purple)
 Requires:       telepathy-filesystem
+Suggests:	pidgin-plugins
 
 %description
 This connection manager allows you to use libpurple, pidgin backend, with 
