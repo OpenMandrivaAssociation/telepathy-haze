@@ -1,5 +1,5 @@
 Name:           telepathy-haze
-Version:        0.3.3
+Version:        0.3.4
 Release:        %mkrel 1
 Summary:        A multiprotocol connection manager based on pidgin
 
