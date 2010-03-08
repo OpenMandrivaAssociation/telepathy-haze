@@ -11,6 +11,7 @@ BuildRoot:      %{_tmppath}/%{name}-%{version}-%{release}-root
 
 BuildRequires:  libtelepathy-glib-devel
 BuildRequires:  pkgconfig(purple)
+BuildRequires:  xsltproc
 Requires:       telepathy-filesystem
 Suggests:	pidgin-plugins
 
