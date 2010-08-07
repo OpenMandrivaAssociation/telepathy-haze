@@ -1,5 +1,5 @@
 Name:           telepathy-haze
-Version:        0.3.4
+Version:        0.4.0
 Release:        %mkrel 1
 Summary:        A multiprotocol connection manager based on pidgin
 
@@ -9,8 +9,8 @@ URL:            http://telepathy.freedesktop.org/wiki/
 Source0:        http://telepathy.freedesktop.org/releases/%{name}/%{name}-%{version}.tar.gz
 BuildRoot:      %{_tmppath}/%{name}-%{version}-%{release}-root
 
-BuildRequires:  libtelepathy-glib-devel
-BuildRequires:  pkgconfig(purple)
+BuildRequires:  libtelepathy-glib-devel >= 0.9.2
+BuildRequires:  pkgconfig(purple) >= 2.6
 BuildRequires:  xsltproc
 Requires:       telepathy-filesystem
 Suggests:	pidgin-plugins
