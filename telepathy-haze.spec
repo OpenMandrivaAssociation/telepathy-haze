@@ -1,15 +1,14 @@
 Name:           telepathy-haze
-Version:        0.4.0
-Release:        %mkrel 1
+Version:        0.6.0
+Release:        1
 Summary:        A multiprotocol connection manager based on pidgin
 
 Group:          Networking/Instant messaging
 License:        GPLv2+
 URL:            http://telepathy.freedesktop.org/wiki/
 Source0:        http://telepathy.freedesktop.org/releases/%{name}/%{name}-%{version}.tar.gz
-BuildRoot:      %{_tmppath}/%{name}-%{version}-%{release}-root
 
-BuildRequires:  libtelepathy-glib-devel >= 0.9.2
+BuildRequires:  telepathy-glib-devel >= 0.9.2
 BuildRequires:  pkgconfig(purple) >= 2.6
 BuildRequires:  xsltproc
 Requires:       telepathy-filesystem
@@ -24,9 +23,9 @@ telepathy enabled software, such as empathy.
 %defattr(-,root,root,-)
 %doc AUTHORS NEWS
 %{_datadir}/dbus-1/services/*.service
-%{_datadir}/telepathy/managers/*.manager
+#%{_datadir}/telepathy/managers/*.manager
 %{_libdir}/%{name}
-%{_mandir}/man*/*.lzma
+%{_mandir}/man*/*.xz
 
 #--------------------------------------------------------------------
 
@@ -40,8 +39,4 @@ telepathy enabled software, such as empathy.
 
 
 %install
-rm -rf %buildroot
 %makeinstall_std
-
-%clean
-rm -rf %buildroot
