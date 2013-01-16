@@ -1,0 +1,11 @@
+--- telepathy-haze-0.7.0/configure.ac.bero	2013-01-16 03:03:52.548727301 +0100
++++ telepathy-haze-0.7.0/configure.ac	2013-01-16 03:03:56.488680060 +0100
+@@ -25,7 +25,7 @@ AC_CONFIG_MACRO_DIR([m4])
+ 
+ AC_CONFIG_AUX_DIR([build-aux])
+ AM_INIT_AUTOMAKE([1.9 -Wno-portability])
+-AM_CONFIG_HEADER([config.h])
++AC_CONFIG_HEADERS([config.h])
+ AC_CONFIG_FILES([Makefile
+ 		 src/Makefile
+ 		 data/Makefile
