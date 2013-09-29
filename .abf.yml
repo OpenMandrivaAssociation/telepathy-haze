@@ -1,4 +1,5 @@
 removed_sources:
   telepathy-haze-0.6.0.tar.gz: 98dd2f2796ae04192533ff8df5af116c54a11e05
-sources:
   telepathy-haze-0.7.0.tar.gz: 260d7a50934614570d543916241f880b0dfd2d43
+sources:
+  telepathy-haze-0.7.1.tar.gz: c92e2979ec8275261f4347770adeed9361a781dd
