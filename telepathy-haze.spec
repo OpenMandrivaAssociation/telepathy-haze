@@ -25,7 +25,7 @@ telepathy enabled software, such as empathy.
 %doc AUTHORS NEWS
 %{_datadir}/dbus-1/services/*.service
 #%{_datadir}/telepathy/managers/*.manager
-%{_libdir}/%{name}
+%{_libexecdir}/%{name}
 %{_mandir}/man*/*.xz
 
 #--------------------------------------------------------------------
