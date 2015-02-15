@@ -1,6 +1,6 @@
 Name:           telepathy-haze
-Version:        0.7.1
-Release:        9
+Version:        0.8.0
+Release:        1
 Summary:        A multiprotocol connection manager based on pidgin
 
 Group:          Networking/Instant messaging
@@ -25,8 +25,8 @@ telepathy enabled software, such as empathy.
 %doc AUTHORS NEWS
 %{_datadir}/dbus-1/services/*.service
 #%{_datadir}/telepathy/managers/*.manager
-%{_libdir}/%{name}
 %{_mandir}/man*/*.xz
+%{_libexecdir}/%{name}
 
 #--------------------------------------------------------------------
 
@@ -40,7 +40,7 @@ automake -a
 autoconf
 
 %build
-%configure 
+%configure PYTHON=%__python2
 %make
 
 
