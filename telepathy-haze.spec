@@ -6,7 +6,6 @@ Group:		Networking/Instant messaging
 License:	GPLv2+
 URL:		http://telepathy.freedesktop.org/wiki/
 Source0:	http://telepathy.freedesktop.org/releases/%{name}/%{name}-%{version}.tar.gz
-Patch0:		telepathy-automake-1.13.patch
 BuildRequires:	telepathy-glib-devel >= 0.9.2
 BuildRequires:	pkgconfig(purple) >= 2.6
 BuildRequires:	xsltproc
@@ -19,18 +18,16 @@ telepathy, allowing you to access to numerous instant messaging network with
 telepathy enabled software, such as empathy.
 
 %files
-%defattr(-,root,root,-)
 %doc AUTHORS NEWS
 %{_datadir}/dbus-1/services/*.service
 #%{_datadir}/telepathy/managers/*.manager
-%{_mandir}/man*/*.xz
+%{_mandir}/man*/*.*
 %{_libexecdir}/%{name}
 
 #--------------------------------------------------------------------
 
 %prep
 %setup -q
-%apply_patches
 
 %build
 %configure PYTHON=%{__python2}
