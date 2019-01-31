@@ -10,6 +10,7 @@ Patch0:		telepathy-haze-pidgin-2.10.12-compat.patch
 BuildRequires:	telepathy-glib-devel >= 0.9.2
 BuildRequires:	pkgconfig(purple) >= 2.6
 BuildRequires:	xsltproc
+BuildRequires:	pkgconfig(python2)
 Requires:	telepathy-filesystem
 Suggests:	pidgin-plugins
 
