@@ -1,6 +1,6 @@
 Name:		telepathy-haze
 Version:	0.8.0
-Release:	1
+Release:	2
 Summary:	A multiprotocol connection manager based on pidgin
 Group:		Networking/Instant messaging
 License:	GPLv2+
