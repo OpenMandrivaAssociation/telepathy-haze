@@ -4,7 +4,7 @@ Release:	4
 Summary:	A multiprotocol connection manager based on pidgin
 Group:		Networking/Instant messaging
 License:	GPLv2+
-URL:		http://telepathy.freedesktop.org/wiki/
+URL:		https://telepathy.freedesktop.org/wiki/
 Source0:	http://telepathy.freedesktop.org/releases/%{name}/%{name}-%{version}.tar.gz
 Patch0:		telepathy-haze-pidgin-2.10.12-compat.patch
 Patch1:		telepathy-haze-0.8.0-crash.patch
