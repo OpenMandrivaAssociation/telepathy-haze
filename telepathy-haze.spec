@@ -8,6 +8,11 @@ URL:		https://telepathy.freedesktop.org/wiki/
 Source0:	http://telepathy.freedesktop.org/releases/%{name}/%{name}-%{version}.tar.gz
 Patch0:		telepathy-haze-pidgin-2.10.12-compat.patch
 Patch1:		telepathy-haze-0.8.0-crash.patch
+BuildRequires:	autoconf
+BuildRequires:	automake
+BuildRequires:	libtool-base
+BuildRequires:	slibtool
+BuildRequires:	make
 BuildRequires:	telepathy-glib-devel >= 0.9.2
 BuildRequires:	pkgconfig(purple) >= 2.6
 BuildRequires:	xsltproc
