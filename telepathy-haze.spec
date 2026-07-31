@@ -1,13 +1,13 @@
 Name:		telepathy-haze
-Version:	0.8.0
-Release:	4
+Version:	0.8.1
+Release:	1
 Summary:	A multiprotocol connection manager based on pidgin
 Group:		Networking/Instant messaging
 License:	GPLv2+
 URL:		https://telepathy.freedesktop.org/wiki/
 Source0:	http://telepathy.freedesktop.org/releases/%{name}/%{name}-%{version}.tar.gz
-Patch0:		telepathy-haze-pidgin-2.10.12-compat.patch
-Patch1:		telepathy-haze-0.8.0-crash.patch
+# dropped (no longer applies): Patch0:		telepathy-haze-pidgin-2.10.12-compat.patch
+# dropped (no longer applies): Patch1:		telepathy-haze-0.8.1-crash.patch
 BuildRequires:	autoconf
 BuildRequires:	automake
 BuildRequires:	libtool-base
